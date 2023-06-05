@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/* general styling */
+:root {
+  /* colors */
+  --pink: hsl(322, 100%, 66%);
+  --light_pink: hsl(321, 100%, 78%);
+  --light_red: hsl(0, 100%, 63%);
+  --dark_cyan: hsl(192, 100%, 9%);
+  --pale_blue: hsl(207, 100%, 98%);
+  /* fonts */
+  --body: 'Open Sans', sans-serif;
+  --heading: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #fff;
+}
+.title {
+  font-family: var(--body);
+  font-size: 3em;
+  color: var(--dark_cyan);
+}
+.text {
+  font-family: var(--body);
+  font-size: 1em;
+  color: var(--dark_cyan);
+  font-weight: 400;
+}
+/* buttons */
+.nav-btn {
+  font-size: 12px;
+  width: 120px;
+  border-radius: 70px;
+  border: 1px solid var(--pink);
+  background: #fff;
+  color: var(--pink);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.main-btn {
+  /* width: 300px; */
+  margin-top: 30px;
+  padding: 1.3rem 5.4rem;
+  font-size: 15px;
+  border-radius: 60px;
+  border: none;
+  background: var(--pink);
+  color: #fff;
+  font-weight: 600;
+
+  -webkit-box-shadow: 0px 7px 10px 3px #e5e4e2;
+  box-shadow: 0px 7px 10 #e5e4e2;
+}
+.main-btn:hover {
+  background-color: var(--light_pink);
+}
+.button-footer:hover {
+  background-color: var(--light_pink);
+}
+/* navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 40px;
+  margin: 10px 50px;
+}
+/* first page */
+main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 7px;
+  flex: 0 0 80%;
+}
+.text-1 {
+  margin: 0 20%;
+  line-height: 27px;
+  padding: 15px;
+  margin-top: 14px;
+}
+.screen-mockups {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.logo {
+  margin-right: 10px;
+  padding-right: 60px;
+}
+/* first section */
+.numbers {
+  margin: 50px 0;
+  font-family: var(--body);
+  background-color: #fff;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-evenly;
+}
+.number-1 h2,
+.number-2 h2 {
+  font-size: 4em;
+  font-weight: 800;
+  color: var(--dark_cyan);
+}
+.number-1 p,
+.number-2 p {
+  font-size: 18px;
+  color: grey;
+  text-transform: capitalize;
+}
+/* second section */
+.section-2 {
+  background-color: var(--pale_blue);
+}
+.elem-1 h1 {
+  font-size: 2em;
+  margin: 15px 0;
+  color: var(--dark_cyan);
+}
+.text-sections {
+  font-size: 1em;
+  line-height: 30px;
+  margin-right: 40px;
+}
+.elements,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 50px;
+  margin-top: -10px;
+}
+.elem-1,
+.info {
+  flex: 1 1 17rem;
+  margin-left: 50px;
+}
+.elem-2,
+.newsletter {
+  flex: 1 1 17rem;
+}
+.image img {
+  height: 365px;
+  margin-left: 60px;
+}
+/* footer styling */
+footer {
+  color: #fff;
+}
+.footer {
+  background-color: var(--dark_cyan);
+  display: flex;
+}
+.info,
+.newsletter {
+  width: 2px;
+  text-align: left;
+  padding: 30px;
+}
+.text-footer {
+  line-height: 27px;
+  padding: 10px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.contact {
+  margin-bottom: 15px;
+  margin-left: 14px;
+}
+.contact img {
+  width: 14px;
+  margin-right: 5px;
+}
+.socials {
+  margin-left: 5px;
+  margin-top: 45px;
+}
+.socials i {
+  margin-left: 10px;
+  font-size: 25px;
+}
+i:hover {
+  color: #00bfff;
+}
+.email:focus {
+  outline: none;
+}
+.footer {
+  display: flex;
+  margin-top: -5px;
+}
+.info {
+  flex: 1 1 30px;
+  margin: 50px;
+}
+.newsletter {
+  flex: 1 1 30px;
+  margin: 50px;
+  margin-top: -30px;
+}
+.newsletter h2 {
+  text-transform: uppercase;
+  padding: 15px;
+}
+.newsletter input {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 250px;
+}
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+@media (max-width: 600px) {
+  .logo {
+    margin-left: -40px;
+  }
+  .nav-btn {
+    margin-left: 30px;
+    padding: 7px;
+  }
+}
+@media (max-width: 800px) {
+  .info,
+  .newsletter {
+    flex: 100%;
+  }
+}
+.img {
+  width: 100%;
+}
+.button-footer {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  background: var(--pink);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > input {
+    flex: 1 1 10ch;
+    margin: 0.5rem;
+
+    &[type='email'] {
+      flex: 3 1 30ch;
+    }
+  }
+}
+.paragraph {
+  margin-right: 20px;
+}
+input {
+  border: none;
+  background: hsl(0 0% 93%);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+/* small screen */
+@media (max-width: 800px) {
+  .title {
+    font-size: 2em;
+    margin: auto;
+  }
+  .text-1 {
+    font-size: 1em;
+    margin: auto;
+  }
+  .numbers {
+    width: 100%;
+    padding: 50px 0;
+    display: grid;
+  }
+  .number-1,
+  .number-2 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .number-2 {
+    margin-top: 100px;
+  }
+  .elements {
+    display: block;
+  }
+  .elements {
+    text-align: center;
+  }
+  .text-sections {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .image img {
+    height: 365px;
+    width: 350px;
+  }
+  .logo {
+    width: 280px;
+  }
+}
+
+@media (max-width: 800px) {
+  .elements {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* optional */
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
+  .elements .elem-1 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .elements .elem-2 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }
+  .screen-mockups {
+    margin-top: 50px;
+  }
+}
