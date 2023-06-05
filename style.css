@@ -260,6 +260,9 @@ i:hover {
   .contact {
     margin-right: -30px;
   }
+   .button-footer {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 800px) {
   .info,
