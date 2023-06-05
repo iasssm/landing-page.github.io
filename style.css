@@ -140,13 +140,16 @@ main {
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  padding: 50px;
+  padding: 20px;
   margin-top: -10px;
 }
 .elem-1,
 .info {
   flex: 1 1 17rem;
   margin-left: 50px;
+}
+.elem-1 h1 {
+  margin-left: -30px;
 }
 .elem-2,
 .newsletter {
@@ -328,20 +331,14 @@ input {
   .elements {
     text-align: center;
   }
-  .text-sections {
-    margin: 0;
-    margin-bottom: 20px;
-  }
   .image img {
     height: 80%;
     width: 80%;
+    margin-left: -5px;
   }
   .logo {
     width: 180px;
   }
-  /* .img {
-    width: 20px;
-  } */
 }
 
 @media (max-width: 800px) {
@@ -356,7 +353,6 @@ input {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    /* optional */
     -webkit-box-align: start;
     -moz-box-align: start;
     -ms-flex-align: start;
