@@ -96,8 +96,8 @@ main {
   width: 80%;
 }
 .logo {
-  margin-right: 10px;
-  padding-right: 60px;
+  margin-right: 5px;
+  padding-right: 10px;
 }
 /* first section */
 .numbers {
@@ -172,7 +172,7 @@ footer {
 }
 .text-footer {
   line-height: 27px;
-  padding: 10px;
+  padding: 5px;
   margin-top: 14px;
   margin-bottom: 10px;
 }
@@ -224,15 +224,40 @@ i:hover {
 }
 
 /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
-/* @media (max-width: 600px) {
+@media (max-width: 360px) {
   .logo {
-    margin-left: -40px;
+    margin-left: -50px;
+    width: 20px;
   }
   .nav-btn {
     margin-left: 30px;
     padding: 7px;
   }
-} */
+  .photo {
+    width: 20px;
+    /* mar
+    gin-left: 60px; */
+  }
+  .image img {
+    width: 500px;
+  }
+  .logo-footer {
+    width: 200px;
+  }
+  /* .socials {
+    margin-left: -200px;
+  } */
+  .info,
+  .newsletter {
+    margin-left: -20px;
+  }
+  /* .paragraph {
+    margin-right: -20px;
+  } */
+  .contact {
+    margin-right: -30px;
+  }
+}
 @media (max-width: 800px) {
   .info,
   .newsletter {
@@ -308,12 +333,15 @@ input {
     margin-bottom: 20px;
   }
   .image img {
-    height: 365px;
-    width: 350px;
+    height: 80%;
+    width: 80%;
   }
   .logo {
-    width: 280px;
+    width: 180px;
   }
+  /* .img {
+    width: 20px;
+  } */
 }
 
 @media (max-width: 800px) {
