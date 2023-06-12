@@ -132,7 +132,7 @@ main {
 .text-sections {
   font-size: 1em;
   line-height: 30px;
-  margin-right: 40px;
+/*   margin-right: 40px; */
 }
 .elements,
 .footer {
